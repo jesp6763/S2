@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a3d24ce6-8e6e-4be0-b29e-5241c136b3cc"
+  name="ProductModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6258dba1-9be2-4ecd-aec1-15cb279d2d8e"
+        name="Product"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="87fef0a9-ab2c-4b21-911e-0d206454cf46"
+            isDerived="false"
+            sourceEndRoleName="Product"
+            targetEndRoleName="PriceHistory"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="92029c30-4c9b-4c2c-87a0-a8071bf687f2"
+              LastKnownName="PriceHistory"
+              LastKnownLocation="ProductModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5917080b-9053-448f-9cdb-67b72bed0724"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16b06ada-41f9-4f5d-903a-aa8f93209371"
+                  name="PriceHistory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a970abbd-157d-4599-814a-62ac2ccc3116"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="058a7f42-dd24-44a8-a367-2feedea1803e"
+            name="Price"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0dc09d16-2d20-4d1e-a410-527f7313bc4b"
+                LastKnownName="Double"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="afe3bd25-068a-4578-bdc9-7cdb9b6a5b11"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8903b2a3-b5c7-4aa3-8f87-6433d78f3c92"
+            name="StockAmount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e4876cfd-36e0-49b2-b888-246b4a5618cd"
+            name="Product"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67b0f035-d34c-4be0-b25b-061f1be1e5bd"
+                  name="name"
+                  direction="In" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9b5c55e-69bc-4a36-8f88-a4a345e436cf"
+                  name="description"
+                  direction="In" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a350c394-9cac-4bcd-ba8f-3b8a41e95de8"
+                  name="price"
+                  direction="In" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e198382-746d-4b1d-a145-dd75c4eef21f"
+                  name="stockAmount"
+                  direction="In" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="88e1668e-8ee9-4ec9-bd08-217c983ef731"
+        name="ProductHistory" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="92029c30-4c9b-4c2c-87a0-a8071bf687f2"
+        name="PriceHistory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="4b5f3b67-34e9-4ce6-aa8b-dd65f1cab2f0"
+            name="Prices"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="40a03b3d-21b6-4bab-ae0d-525c0ca51327"
+                LastKnownName="Dictionary&lt;DateTime, List&lt;Double&gt;&gt;"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e3c62e05-ce45-4e78-819f-f34ee7498ef3"
+            name="LatestChange"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="992d05b7-664f-41fd-82c9-2c7588375f89"
+                LastKnownName="DateTime"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d9ae1798-8b49-4d40-851b-dc3be3586974"
+            name="HighestPrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0dc09d16-2d20-4d1e-a410-527f7313bc4b"
+                LastKnownName="Double"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1101a3c7-e3c2-47f9-a1be-a7002c18d8fe"
+            name="LowestPrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0dc09d16-2d20-4d1e-a410-527f7313bc4b"
+                LastKnownName="Double"
+                LastKnownLocation="ProductModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="621eb559-bdc9-48b0-b7a5-139684592a03"
+            name="CommitPrice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c75ea5b8-9284-4ffc-8a00-086117ee8b38"
+                  name="price"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="eb9af34d-ba0f-4910-a4c5-55297009e016"
+                      LastKnownName="double"
+                      LastKnownLocation="ProductModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="deb1dc11-cf18-4352-8cae-766b3cf9f885"
+            name="GetHistoryAtDate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d866cd0-043a-4509-af8b-2c08a3050e09"
+                  name="dateTime"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="992d05b7-664f-41fd-82c9-2c7588375f89"
+                      LastKnownName="DateTime"
+                      LastKnownLocation="ProductModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d6a26264-b92b-4c0b-b283-439ed1971775"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="eb9af34d-ba0f-4910-a4c5-55297009e016"
+        name="double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="519a4db6-5db4-481a-b9b7-d7e9f9cc14ae"
+        name="double[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0dc09d16-2d20-4d1e-a410-527f7313bc4b"
+        name="Double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0f03c98b-f5d9-4ae0-ba62-07f260e8f7c2"
+        name="Double[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="992d05b7-664f-41fd-82c9-2c7588375f89"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="40a03b3d-21b6-4bab-ae0d-525c0ca51327"
+        name="Dictionary&lt;DateTime, List&lt;Double&gt;&gt;" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
