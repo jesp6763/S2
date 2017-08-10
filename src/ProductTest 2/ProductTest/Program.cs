@@ -6,7 +6,7 @@ namespace ProductTest
     {
         static void Main(string[] args)
         {
-            Product product1 = new Product("Laptop XL", "Crazy fast laptop!", 19431, 3);
+            Product product1 = new Product("Laptop XL", 19431, 3, "Crazy fast laptop!");
             Console.WriteLine($"Name: {product1.Name}\nDescription: {product1.Description}\nPrice: {product1.Price}\nStock available: {product1.StockAmount}");
 
             Seperate();

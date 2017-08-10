@@ -10,13 +10,17 @@ namespace ProductTest
         private double price; // The price of the product
         private int stockAmount; // How much stock is available
 
-        public Product(string name, string description, double price, int stockAmount)
+        public Product(string name, double price, int stockAmount)
         {
             PriceHistory = new PriceHistory();
             Name = name;
-            Description = description;
             Price = price;
             StockAmount = stockAmount;
+        }
+
+        public Product(string name, double price, int stockAmount, string description) : this(name, price, stockAmount)
+        {
+            Description = description;
         }
 
         public string Name

@@ -10,3 +10,9 @@ D:\Documents\Github Repos\S2\src\ProductTest\ProductTest\bin\Debug\ProductTest.p
 D:\Documents\Github Repos\S2\src\ProductTest\ProductTest\obj\Debug\ProductTest.csprojResolveAssemblyReference.cache
 D:\Documents\Github Repos\S2\src\ProductTest\ProductTest\obj\Debug\ProductTest.exe
 D:\Documents\Github Repos\S2\src\ProductTest\ProductTest\obj\Debug\ProductTest.pdb
+D:\Documents\Github Repos\S2\src\ProductTest 2\ProductTest\bin\Debug\ProductTest.exe.config
+D:\Documents\Github Repos\S2\src\ProductTest 2\ProductTest\bin\Debug\ProductTest.exe
+D:\Documents\Github Repos\S2\src\ProductTest 2\ProductTest\bin\Debug\ProductTest.pdb
+D:\Documents\Github Repos\S2\src\ProductTest 2\ProductTest\obj\Debug\ProductTest.csprojResolveAssemblyReference.cache
+D:\Documents\Github Repos\S2\src\ProductTest 2\ProductTest\obj\Debug\ProductTest.exe
+D:\Documents\Github Repos\S2\src\ProductTest 2\ProductTest\obj\Debug\ProductTest.pdb
