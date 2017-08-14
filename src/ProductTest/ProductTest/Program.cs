@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProductTest
 {
@@ -10,8 +6,11 @@ namespace ProductTest
     {
         static void Main(string[] args)
         {
-            Product product1 = new Product("Laptop XL", "Crazy fast laptop", 19431, 3);
-            Console.WriteLine($"Current product price: {product1.Price}");
+            Product product1 = new Product("Laptop XL", 19431, 3, "Crazy fast laptop!");
+            Console.WriteLine($"Name: {product1.Name}\nDescription: {product1.Description}\nPrice: {product1.Price}\nStock available: {product1.StockAmount}");
+            Console.WriteLine(double.MaxValue.ToString());
+            Seperate();
+            Console.WriteLine($"Changes done to product: {product1.Name}");
             product1.Price = 23000;
             Console.WriteLine($"New price: {product1.Price}");
             product1.Price = 200;

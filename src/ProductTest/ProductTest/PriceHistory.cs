@@ -1,14 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProductTest
 {
-    class PriceHistory
+    /// <summary>
+    /// Information about a product's price history
+    /// </summary>
+    public class PriceHistory
     {
-        // This is the highest registered price
+        /// <summary>
+        /// Initializes a new instance of this class
+        /// </summary>
+        public PriceHistory()
+        {
+            Prices = new Dictionary<DateTime, List<double>>();
+        }
+
+        /// <summary>
+        /// Gets the highest price registered in the product's price history
+        /// </summary>
         public double HighestPrice
         {
             get
@@ -25,7 +36,9 @@ namespace ProductTest
                 return result;
             }
         }
-        // This is the lowest registered price
+        /// <summary>
+        /// Gets the lowest price registered in the product's price history
+        /// </summary>
         public double LowestPrice
         {
             get
@@ -42,24 +55,15 @@ namespace ProductTest
                 return result;
             }
         }
+        /// <summary>
+        /// Gets or sets prices history
+        /// </summary>
+        public Dictionary<DateTime, List<double>> Prices { get; set; }
 
-        private Dictionary<DateTime, List<double>> prices;
-        public Dictionary<DateTime, List<double>> Prices
-        {
-            get
-            {
-                if(prices == null)
-                {
-                    Prices = new Dictionary<DateTime, List<double>>();
-                }
-                return prices;
-            }
-            set
-            {
-                prices = value;
-            }
-        }
-
+        /// <summary>
+        /// Registers the price change
+        /// </summary>
+        /// <param name="price">The price to add to the history</param>
         public void CommitPrice(double price)
         {
             DateTime dateTime = DateTime.Today;
@@ -76,8 +80,9 @@ namespace ProductTest
 
         /// <summary>
         /// Returns all price changes from the specified date, in order
-        /// <paramref name="date"/>
         /// </summary>
+        /// <param name="date">The date of the price changes</param>
+        /// <returns>An array of price changes from the specified date, in order</returns>
         public double[] GetHistoryAtDate(DateTime date)
         {
             if(Prices.ContainsKey(date))
