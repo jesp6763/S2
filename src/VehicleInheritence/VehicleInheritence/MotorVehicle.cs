@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using VehicleInheritence.Components;
 using VehicleInheritence.Enums;
-using VehicleInheritence.Interfaces;
 
 namespace VehicleInheritence
 {

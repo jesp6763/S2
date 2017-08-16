@@ -49,6 +49,7 @@
     <Compile Include="Enums\ETransmissionType.cs" />
     <Compile Include="Enums\EWheelDrive.cs" />
     <Compile Include="Interfaces\IGear.cs" />
+    <Compile Include="Motorcycle.cs" />
     <Compile Include="MotorVehicle.cs" />
     <Compile Include="MountainBike.cs" />
     <Compile Include="Program.cs" />
