@@ -19,12 +19,25 @@ namespace VehicleInheritence
             MotorVehicle vehicle4 = new MotorVehicle("Ford", "Raptor F-150", 1724.0f, 95.0f, 154, new Powertrain(new Transmission(6, ETransmissionType.Manual)));
 
             PrintMotorVehicleSpecs(vehicle1);
+            vehicle1.Clutch(true);
+            vehicle1.ShiftGear(1);
+            vehicle1.Clutch(false);
             vehicle1.Accelerate();
+
             PrintMotorVehicleSpecs(vehicle2);
+            vehicle2.Clutch(true);
+            vehicle2.ShiftGear(1);
+            vehicle2.Clutch(false);
             vehicle2.Accelerate();
+
             PrintMotorVehicleSpecs(vehicle3);
+            vehicle3.ShiftGear(1);
             vehicle3.Accelerate();
+
             PrintMotorVehicleSpecs(vehicle4);
+            vehicle4.Clutch(true);
+            vehicle4.ShiftGear(1);
+            vehicle4.Clutch(false);
             vehicle4.Accelerate();
 
             Console.WriteLine(); // Empty newline

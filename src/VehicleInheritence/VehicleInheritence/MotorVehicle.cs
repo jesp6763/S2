@@ -154,9 +154,13 @@ namespace VehicleInheritence
             Console.WriteLine($"Reversing my crazy {Manufacturer} {Model} vehicle");
         }
 
-        public void Clutch()
+        /// <summary>
+        /// Changes the clutch state
+        /// </summary>
+        /// <param name="clutch">The clutch state</param>
+        public void Clutch(bool clutch)
         {
-            IsClutchDown = true;
+            IsClutchDown = clutch;
         }
 
         /// <summary>
@@ -168,7 +172,6 @@ namespace VehicleInheritence
             {
                 Powertrain.Transmission.CurrentGear = gear;
                 Console.WriteLine($"Gear shifted to {gear}");
-                IsClutchDown = false;
             }
             else
             {
