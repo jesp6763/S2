@@ -14,9 +14,9 @@ namespace VehicleInheritence
         {
             // Create 4 different motorized vehicles
             MotorVehicle vehicle1 = new MotorVehicle("BMW", "E34", 1435.0f, 80.0f, 195, new Powertrain(new Transmission(5, ETransmissionType.Manual)), EFuelType.Benzin, EWheelDrive.RWD);
-            MotorVehicle vehicle2 = new MotorVehicle("Ford", "Escort mk2", 1243.0f, 76.0f, 243, new Powertrain(new Transmission(5, ETransmissionType.Manual)), EFuelType.Benzin, EWheelDrive.AWD);
+            MotorVehicle vehicle2 = new MotorVehicle("Ford", "Escort mk2", 1243.0f, 76.0f, 243, new Powertrain(new Transmission(5, ETransmissionType.Manual)));
             MotorVehicle vehicle3 = new MotorVehicle("Lamborghini", "Hurricane", 1105.0f, 65.0f, 323, new Powertrain(new Transmission(6)), EFuelType.Benzin, EWheelDrive.FWD);
-            MotorVehicle vehicle4 = new MotorVehicle("Ford", "Raptor F-150", 1724.0f, 95.0f, 154, new Powertrain(new Transmission(6, ETransmissionType.Manual)), EFuelType.Benzin, EWheelDrive.AWD);
+            MotorVehicle vehicle4 = new MotorVehicle("Ford", "Raptor F-150", 1724.0f, 95.0f, 154, new Powertrain(new Transmission(6, ETransmissionType.Manual)));
 
             PrintMotorVehicleSpecs(vehicle1);
             vehicle1.Accelerate();
@@ -27,7 +27,7 @@ namespace VehicleInheritence
             PrintMotorVehicleSpecs(vehicle4);
             vehicle4.Accelerate();
 
-            Console.WriteLine(); // Space
+            Console.WriteLine(); // Empty newline
             // Create 2 bicycles
             MountainBike mountainBike = new MountainBike("Lamingo", "Normandy R-2", 59, 6);
             RacingBike racingBike = new RacingBike("Raci", "RMaster M29", 34, 3);

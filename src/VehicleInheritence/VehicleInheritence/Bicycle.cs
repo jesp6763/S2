@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace VehicleInheritence
 {
     /// <summary>
@@ -32,7 +27,7 @@ namespace VehicleInheritence
         }
 
         /// <summary>
-        /// Reversin the bicycle
+        /// Reverses the bicycle
         /// </summary>
         public override void Reverse()
         {

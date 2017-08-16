@@ -21,16 +21,6 @@ namespace VehicleInheritence
         /// The top speed of the vehicle
         /// </summary>
         private int topSpeed;
-
-        /// <summary>
-        /// How many gears the vehicle has
-        /// </summary>
-        private int gears;
-
-        /// <summary>
-        /// The current gear the vehicle is on
-        /// </summary>
-        private int currentGear;
         #endregion
 
         #region Constructors
