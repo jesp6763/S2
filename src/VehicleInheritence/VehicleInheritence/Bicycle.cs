@@ -33,5 +33,10 @@ namespace VehicleInheritence
         {
             Console.WriteLine($"Reversing my crazy {Manufacturer} {Model} {GetType().Name}");
         }
+
+        public virtual void UseBell()
+        {
+            Console.WriteLine($"Ringing my bell on my {Manufacturer} {Model} {GetType().Name}");
+        }
     }
 }
