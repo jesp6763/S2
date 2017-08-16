@@ -26,6 +26,7 @@ namespace VehicleInheritence
             vehicle1.ShiftGear(1);
             vehicle1.Clutch(false);
             vehicle1.Accelerate();
+            vehicle1.UseHorn();
 
             PrintMotorVehicleSpecs(vehicle2);
             Console.WriteLine("------------------------------------");

@@ -153,7 +153,7 @@ namespace VehicleInheritence
             else
             {
                 string gearName = Powertrain.Transmission.CurrentGear == 0 ? "neutral" : "reverse";
-                Console.WriteLine($"You can't accelerate, you have to shift out of {gearName} gear");
+                Console.WriteLine($"You can't accelerate in {gearName} gear, you have to shift out of {gearName} gear to be able to accelerate");
             }
         }
 
@@ -195,6 +195,14 @@ namespace VehicleInheritence
             {
                 Console.WriteLine("Use your clutch before shifting");
             }
+        }
+
+        /// <summary>
+        /// Makes the vehicle say doot!
+        /// </summary>
+        public void UseHorn()
+        {
+            Console.WriteLine($"{Manufacturer} {Model} says doot!");
         }
         #endregion
     }
