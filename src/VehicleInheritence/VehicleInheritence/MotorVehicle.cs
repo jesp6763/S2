@@ -146,7 +146,14 @@ namespace VehicleInheritence
         /// </summary>
         public override void Accelerate()
         {
-            Console.WriteLine($"Accelerating my crazy {Manufacturer} {Model} vehicle");
+            if(Powertrain.Transmission.CurrentGear > 0)
+            {
+                Console.WriteLine($"Accelerating my crazy {Manufacturer} {Model} vehicle");
+            }
+            else
+            {
+                Console.WriteLine("You can't accelerate, you have to shift out of neutral gear");
+            }
         }
 
         public override void Reverse()

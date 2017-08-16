@@ -19,28 +19,43 @@ namespace VehicleInheritence
             MotorVehicle vehicle4 = new MotorVehicle("Ford", "Raptor F-150", 1724.0f, 95.0f, 154, new Powertrain(new Transmission(6, ETransmissionType.Manual)));
 
             PrintMotorVehicleSpecs(vehicle1);
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Actions:");
+            Console.WriteLine(); // Empty newline
             vehicle1.Clutch(true);
             vehicle1.ShiftGear(1);
             vehicle1.Clutch(false);
             vehicle1.Accelerate();
 
             PrintMotorVehicleSpecs(vehicle2);
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Actions:");
+            Console.WriteLine(); // Empty newline
             vehicle2.Clutch(true);
             vehicle2.ShiftGear(1);
             vehicle2.Clutch(false);
             vehicle2.Accelerate();
 
             PrintMotorVehicleSpecs(vehicle3);
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Actions:");
+            Console.WriteLine(); // Empty newline
             vehicle3.ShiftGear(1);
             vehicle3.Accelerate();
 
             PrintMotorVehicleSpecs(vehicle4);
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Actions:");
+            Console.WriteLine(); // Empty newline
             vehicle4.Clutch(true);
             vehicle4.ShiftGear(1);
             vehicle4.Clutch(false);
             vehicle4.Accelerate();
 
             Console.WriteLine(); // Empty newline
+
+            Console.WriteLine("====================================================================");
+            Console.WriteLine("BICYCLES:");
             // Create 2 bicycles
             MountainBike mountainBike = new MountainBike("Lamingo", "Normandy R-2", 59, 6);
             RacingBike racingBike = new RacingBike("Raci", "RMaster M29", 34, 3);
