@@ -152,13 +152,24 @@ namespace VehicleInheritence
             }
             else
             {
-                Console.WriteLine("You can't accelerate, you have to shift out of neutral gear");
+                string gearName = Powertrain.Transmission.CurrentGear == 0 ? "neutral" : "reverse";
+                Console.WriteLine($"You can't accelerate, you have to shift out of {gearName} gear");
             }
         }
 
+        /// <summary>
+        /// Reverses the vehicle
+        /// </summary>
         public override void Reverse()
         {
-            Console.WriteLine($"Reversing my crazy {Manufacturer} {Model} vehicle");
+            if(Powertrain.Transmission.CurrentGear == -1)
+            {
+                Console.WriteLine($"Reversing my crazy {Manufacturer} {Model} vehicle");
+            }
+            else
+            {
+                Console.WriteLine("You have to be in reverse gear to be able to reverse");
+            }
         }
 
         /// <summary>

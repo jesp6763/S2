@@ -66,13 +66,13 @@ namespace VehicleInheritence.Components
         /// <summary>
         /// Gets or sets the current gear
         /// </summary>
-        /// <exception cref="ArgumentOutOfRangeException">Thrown when attempting to set the value to something less than 0, or greater than the max gears</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when attempting to set the value to something less than -1, or greater than the max gears</exception>
         public int CurrentGear
         {
             get => currentGear;
             set
             {
-                if (value >= 0 && value <= Gears)
+                if (value >= -1 && value <= Gears)
                 {
                     currentGear = value;
                 }

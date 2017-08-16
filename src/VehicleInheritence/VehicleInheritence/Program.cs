@@ -35,6 +35,10 @@ namespace VehicleInheritence
             vehicle2.ShiftGear(1);
             vehicle2.Clutch(false);
             vehicle2.Accelerate();
+            vehicle2.Clutch(true);
+            vehicle2.ShiftGear(-1);
+            vehicle2.Clutch(false);
+            vehicle2.Reverse();
 
             PrintMotorVehicleSpecs(vehicle3);
             Console.WriteLine("------------------------------------");
@@ -42,6 +46,8 @@ namespace VehicleInheritence
             Console.WriteLine(); // Empty newline
             vehicle3.ShiftGear(1);
             vehicle3.Accelerate();
+            vehicle3.ShiftGear(-1);
+            vehicle3.Reverse();
 
             PrintMotorVehicleSpecs(vehicle4);
             Console.WriteLine("------------------------------------");
